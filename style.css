@@ -1,0 +1,68 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 1px 1px #f6f4f4;
+}
+
+.background {
+  background-image: url("images/with83.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position-y: -270px;
+  min-height: 800px;
+}
+
+.overlay {
+    background-color: rgba(244, 239, 239, 0.5);
+    min-height: 800px;
+}
+
+.digit {
+    border-radius: 20%;
+    padding: 5px;
+    background: #bba6a6;
+    border: 3px solid #bf4262;
+    color: #000;
+    text-align: center;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.snowflake {
+position: absolute;
+display: block;
+color: #ff0000;
+font-size: 24px;
+user-select: none;
+pointer-events: none;
+animation: snowfall linear infinite;
+}
+
+@keyframes snowfall {
+0% {
+    transform: translateY(-100%);
+}
+100% {
+    transform: translateY(100%);
+}
+}
+
+@media(max-width: 768px) {
+    .background {
+        background-image: url("images/with83.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .digit {
+        border-radius: 20%;
+        padding: 0;
+        background: #bba6a6;
+        border: 3px solid #bf4262;
+        color: #000;
+        text-align: center;
+    }
+}
